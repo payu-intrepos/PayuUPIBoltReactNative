@@ -124,6 +124,9 @@
      
      launchPayUUPIBolt = () => {
         PayUBizSdk.getInstance(createSDKConfig());
+     }
+
+     payURegisterAndPay = () => {
         PayUBizSdk.isUPIBoltSDKAvailable(
             (response) => {
              if (response.isSDKAvailable == 'true'){
@@ -138,7 +141,6 @@
      }
 
      upiBoltSettings = () => {
-        PayUBizSdk.getInstance(createSDKConfig());
         PayUBizSdk.isUPIBoltSDKAvailable(
             (response) => {
              if (response.isSDKAvailable == 'true'){
@@ -207,7 +209,10 @@
                  <TextInput style={styles.valuesTextInput} defaultValue={merchantName} onChangeText={text => { setMerchantName(text) }} />
              </View>
              <View style={{ flex: 1, marginBottom: 10 }}>
-              <Button style={styles.button} title={'Register & Pay'}  onPress={()=>{launchPayUUPIBolt()}} />
+              <Button style={styles.button} title={'Initiate SDK'}  onPress={()=>{launchPayUUPIBolt()}} />
+            </View>
+             <View style={{ flex: 1, marginBottom: 10 }}>
+              <Button style={styles.button} title={'Register & Pay'}  onPress={()=>{payURegisterAndPay()}} />
             </View>
              <Button style={styles.button} title={'UPI Settings'}  onPress={()=>{upiBoltSettings()}} />
          </ScrollView>
