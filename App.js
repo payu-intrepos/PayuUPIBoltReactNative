@@ -49,7 +49,6 @@
          onPayUFailureListener = eventEmitter.addListener('onPayUFailure', onPayUFailure);
          onPayUCancelListener = eventEmitter.addListener('onPayUCancel', onPayUCancel);
          payUGenerateHashListener = eventEmitter.addListener('generateHash', generateHash);
-         PayUBizSdk.getInstance(createSDKConfig());
     //Unregister eventEmitters here
          return () => {
             console.log("Unsubscribed!!!!")
@@ -124,6 +123,7 @@
      }
      
      launchPayUUPIBolt = () => {
+        PayUBizSdk.getInstance(createSDKConfig());
         PayUBizSdk.isUPIBoltSDKAvailable(
             (response) => {
              if (response.isSDKAvailable == 'true'){
@@ -138,7 +138,7 @@
      }
 
      upiBoltSettings = () => {
-
+        PayUBizSdk.getInstance(createSDKConfig());
         PayUBizSdk.isUPIBoltSDKAvailable(
             (response) => {
              if (response.isSDKAvailable == 'true'){
