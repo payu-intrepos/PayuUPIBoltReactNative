@@ -16,14 +16,14 @@
  export default App= () => {
  
      const [environment, setEnvironment] = useState(0 + "");
-     const [key, setKey] = useState('smsplus');
-     const [merchantSalt, setMerchantSalt] = useState('1b1b0');
+     const [key, setKey] = useState(''); //Put your merchant key here. 
+     const [merchantSalt, setMerchantSalt] = useState(''); //Put your salt here. 
      const [merchantName, setMerchantName] = useState("Rashan vala");
      const [amount, setAmount] = useState("1.00");
      const [productInfo, setProductInfo] = useState('productInfo');
      const [firstName, setFirstName] = useState('firstName');
      const [email, setEmail] = useState('test@gmail.com');
-     const [phone, setPhone] = useState('');//Put your mobile number for testing
+     const [phone, setPhone] = useState('');//Put your mobile number without 91 for testing
      const [sUrl, surl] = useState('https://payu.herokuapp.com/ios_success');
      const [fUrl, furl] = useState('https://payu.herokuapp.com/ios_failure');
      const [udf1, setUdf1] = useState('udf1');
