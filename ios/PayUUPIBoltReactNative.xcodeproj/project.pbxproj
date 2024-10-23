@@ -15,7 +15,7 @@
 		4EB201570D0EDAB00D851C59 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AC451CD436DD0FB39B98B120 /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-PayUUPIBoltReactNative-PayUUPIBoltReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-PayUUPIBoltReactNative-PayUUPIBoltReactNativeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		E8C102132CBEB488003E194C /* PayUBizSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C102122CBEB488003E194C /* PayUBizSdk.m */; };
+		A7C88E172CC8D6DD00D5A9BE /* PayUBizSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C88E152CC8D6DD00D5A9BE /* PayUBizSdk.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +46,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-PayUUPIBoltReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PayUUPIBoltReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PayUUPIBoltReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-PayUUPIBoltReactNative-PayUUPIBoltReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayUUPIBoltReactNative-PayUUPIBoltReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-PayUUPIBoltReactNative-PayUUPIBoltReactNativeTests/Pods-PayUUPIBoltReactNative-PayUUPIBoltReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A7C88E152CC8D6DD00D5A9BE /* PayUBizSdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PayUBizSdk.m; path = PayUUPIBoltReactNative/PayUBizSdk.m; sourceTree = "<group>"; };
+		A7C88E162CC8D6DD00D5A9BE /* PayUBizSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PayUBizSdk.h; path = PayUUPIBoltReactNative/PayUBizSdk.h; sourceTree = "<group>"; };
 		AC451CD436DD0FB39B98B120 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = PayUUPIBoltReactNative/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		E8C102112CBEB488003E194C /* PayUBizSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayUBizSdk.h; sourceTree = "<group>"; };
-		E8C102122CBEB488003E194C /* PayUBizSdk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayUBizSdk.m; sourceTree = "<group>"; };
 		E8EE54CB2CBF969E00724584 /* CommonLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CommonLibrary.xcframework; path = "../../PayU/upi-plugin-ui-ios/Dependency/Frameworks/CommonLibrary.xcframework"; sourceTree = "<group>"; };
 		E8EE54CC2CBF969E00724584 /* OlivePayLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OlivePayLibrary.xcframework; path = "../../PayU/upi-plugin-ui-ios/Dependency/Frameworks/OlivePayLibrary.xcframework"; sourceTree = "<group>"; };
 		E8EE54D22CBF97F400724584 /* PayUUPIBoltBaseKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PayUUPIBoltBaseKit.xcframework; path = "../../../Downloads/Archive 4/PayUUPIBoltBaseKit.xcframework"; sourceTree = "<group>"; };
@@ -104,9 +104,9 @@
 		13B07FAE1A68108700A75B9A /* PayUUPIBoltReactNative */ = {
 			isa = PBXGroup;
 			children = (
+				A7C88E162CC8D6DD00D5A9BE /* PayUBizSdk.h */,
+				A7C88E152CC8D6DD00D5A9BE /* PayUBizSdk.m */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				E8C102112CBEB488003E194C /* PayUBizSdk.h */,
-				E8C102122CBEB488003E194C /* PayUBizSdk.m */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -429,7 +429,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				E8C102132CBEB488003E194C /* PayUBizSdk.m in Sources */,
+				A7C88E172CC8D6DD00D5A9BE /* PayUBizSdk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +507,7 @@
 				DEVELOPMENT_TEAM = 3T2M5UN5C5;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PayUUPIBoltReactNative/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -538,7 +538,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3T2M5UN5C5;
 				INFOPLIST_FILE = PayUUPIBoltReactNative/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
