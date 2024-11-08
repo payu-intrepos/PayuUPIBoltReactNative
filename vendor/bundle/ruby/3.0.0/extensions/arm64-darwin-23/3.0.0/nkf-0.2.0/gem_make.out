@@ -1,0 +1,15 @@
+current directory: /Users/shubham.garg/Documents/PayU/react-native-biz-ui-sdk/MyNewProject/vendor/bundle/ruby/3.0.0/gems/nkf-0.2.0/ext/nkf
+/Users/shubham.garg/.rbenv/versions/3.0.0/bin/ruby -I /Users/shubham.garg/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20240915-41860-ly34rq.rb extconf.rb
+creating Makefile
+
+current directory: /Users/shubham.garg/Documents/PayU/react-native-biz-ui-sdk/MyNewProject/vendor/bundle/ruby/3.0.0/gems/nkf-0.2.0/ext/nkf
+make "DESTDIR=" clean
+
+current directory: /Users/shubham.garg/Documents/PayU/react-native-biz-ui-sdk/MyNewProject/vendor/bundle/ruby/3.0.0/gems/nkf-0.2.0/ext/nkf
+make "DESTDIR="
+compiling nkf.c
+linking shared-object nkf.bundle
+
+current directory: /Users/shubham.garg/Documents/PayU/react-native-biz-ui-sdk/MyNewProject/vendor/bundle/ruby/3.0.0/gems/nkf-0.2.0/ext/nkf
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nkf.bundle ./.gem.20240915-41860-16y05q
