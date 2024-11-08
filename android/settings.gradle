@@ -1,5 +1,5 @@
 rootProject.name = 'example'
-include ':payu-upi-plugin-react'
-project(':payu-upi-plugin-react').projectDir = new File(rootProject.projectDir, '../node_modules/payu-upi-plugin-react/android')
+include ':payu-upi-bolt-ui-rn'
+project(':payu-upi-bolt-ui-rn').projectDir = new File(rootProject.projectDir, '../node_modules/payu-upi-bolt-ui-rn/android')
 
 include ':app'
